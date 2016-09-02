@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import Photos
 
 class PreviewCollectionViewCell: UICollectionViewCell {
+    var _identifier: Int
+    
+    func configureWithAsset(asset: PHAsset) {
+        let random = Int(arc4random_uniform(500))
+        
+        self.requestImageForAsset(asset) { image in
+            self.imageView.image = image
+        }
+    }
     
     let imageView: UIImageView = {
         let imageView = UIImageView()

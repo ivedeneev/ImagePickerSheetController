@@ -88,7 +88,7 @@ public class ImagePickerSheetController: UIViewController {
     
     private lazy var requestOptions: PHImageRequestOptions = {
         let options = PHImageRequestOptions()
-        options.deliveryMode = .HighQualityFormat
+        options.deliveryMode = .Opportunistic
         options.resizeMode = .Fast
         
         return options
@@ -248,22 +248,16 @@ public class ImagePickerSheetController: UIViewController {
                 }
             }
             
-            if let asset = asset as? PHAsset {
-                self.imageManager.requestImageDataForAsset(asset, options: requestOptions) { data, _, _, info in
-                    if data != nil {
-                        self.assets.append(asset)
-                    }
-                }
-            }
+            self.assets.append(asset as! PHAsset)
         }
     }
     
     private func requestImageForAsset(asset: PHAsset, completion: (image: UIImage?) -> ()) {
         let targetSize = sizeForAsset(asset, scale: UIScreen.mainScreen().scale)
-        requestOptions.synchronous = true
         
         // Workaround because PHImageManager.requestImageForAsset doesn't work for burst images
         if asset.representsBurst {
+            
             imageManager.requestImageDataForAsset(asset, options: requestOptions) { data, _, _, _ in
                 let image = data.flatMap { UIImage(data: $0) }
                 completion(image: image)
@@ -373,7 +367,7 @@ extension ImagePickerSheetController: UICollectionViewDataSource {
     }
     
     public func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 172
     }
     
     public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -382,7 +376,9 @@ extension ImagePickerSheetController: UICollectionViewDataSource {
         let asset = assets[indexPath.section]
         cell.videoIndicatorView.hidden = asset.mediaType != .Video
 
-        requestImageForAsset(asset) { image in
+        cell.configureWithAsset(asset)
+        
+        self.requestImageForAsset(asset) { image in
             cell.imageView.image = image
         }
         
