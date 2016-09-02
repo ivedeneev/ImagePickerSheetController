@@ -376,7 +376,7 @@ extension ImagePickerSheetController: UICollectionViewDataSource {
         let asset = assets[indexPath.section]
         cell.videoIndicatorView.hidden = asset.mediaType != .Video
 
-        cell.configureWithAsset(asset)
+//        cell.configureWithAsset(asset)
         
         self.requestImageForAsset(asset) { image in
             cell.imageView.image = image
