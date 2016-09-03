@@ -10,19 +10,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImagePickerSheetController/ImagePickerSheetController.swift"
-            timestampString = "494502098.678306"
+            timestampString = "494595942.902997"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "407"
-            endingLineNumber = "407"
-            landmarkName = "ImagePickerSheetController"
-            landmarkType = "3">
+            startingLineNumber = "415"
+            endingLineNumber = "415"
+            landmarkName = "collectionView(_:didSelectItemAtIndexPath:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImagePickerSheetController/ImagePickerSheetController.swift"
@@ -33,38 +33,54 @@
             endingLineNumber = "268"
             landmarkName = "requestImageForAsset(_:completion:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImagePickerSheetController.ImagePickerSheetController.(requestImageForAsset in _6AB559831B663FB04A1FFDCCC6F07BE6) (__ObjC.PHAsset, completion : (image : Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImagePickerSheetController"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/igorvedeneev/Documents/Projects/ImagePickerSheetController/ImagePickerSheetController/ImagePickerSheetController/ImagePickerSheetController.swift"
-                  timestampString = "494502098.847263"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "268"
-                  endingLineNumber = "268"
-                  offsetFromSymbolStart = "388">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImagePickerSheetController.ImagePickerSheetController.((requestImageForAsset in _6AB559831B663FB04A1FFDCCC6F07BE6) (__ObjC.PHAsset, completion : (image : Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "ImagePickerSheetController"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/igorvedeneev/Documents/Projects/ImagePickerSheetController/ImagePickerSheetController/ImagePickerSheetController/ImagePickerSheetController.swift"
-                  timestampString = "494502098.848025"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "269"
-                  endingLineNumber = "269"
-                  offsetFromSymbolStart = "124">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImagePickerSheetController/ImagePickerSheetController.swift"
+            timestampString = "494595942.902997"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "455"
+            endingLineNumber = "455"
+            landmarkName = "ImagePickerSheetController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImagePickerSheetController/ImagePickerSheetController.swift"
+            timestampString = "494591630.618132"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "reloadCurrentPreviewHeight(invalidateLayout:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImagePickerSheetController/ImagePickerSheetController.swift"
+            timestampString = "494596050.898535"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "338"
+            endingLineNumber = "338"
+            landmarkName = "enlargePreviewsByCenteringToIndexPath(_:completion:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
